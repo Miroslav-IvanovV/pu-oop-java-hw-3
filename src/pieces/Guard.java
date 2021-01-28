@@ -2,11 +2,7 @@ package pieces;
 
 import java.awt.*;
 
-public class Guard {
-
-    private int row;
-    private int col;
-    private char colour;
+public class Guard extends Piece {
 
     public Guard(int row , int col, char colour) {
         this.row = row;
@@ -25,9 +21,5 @@ public class Guard {
 
         g.fillOval(this.col * 100 + 25,this.row * 100 + 25,50,50);
 
-    }
-    public void move(int row, int col){
-        this.row = row;
-        this.col = col;
     }
 }
